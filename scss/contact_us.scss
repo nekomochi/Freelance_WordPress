@@ -1,0 +1,197 @@
+@import 'variables';
+
+.contact-us {
+  // background: url("images/home/home_footer_bg.jpg") no-repeat bottom;
+  
+  .option-block {
+    
+
+    h4 {
+      font-family: $font_bold;
+      color: $font_color_navbar;
+    }
+    h1 {
+      font-family: $font_black;
+      color: $font_color_navbar;
+    }
+
+    h6 {
+      font-family: $font_book;
+      font-size: 1.25rem;
+      color: $font_color_text;
+    }
+    .card {
+      border-radius: 4px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 100%;
+    }
+    .flex {
+      display: flex;
+      height: inherit;
+
+      align-items: stretch; 
+    }
+    &.navi {
+      padding: 90px 0 100px 0;
+      text-align: center;
+      a {
+        display: block;
+        padding: 50px 60px 0;
+      }
+
+      .card-body {
+        padding: 36px 45px 50px;
+      }
+    }
+    &.option-1 {
+      text-align: center;
+      .option-image {
+        padding-bottom: 30px;
+      }
+      img {
+        max-width: 180px;
+      }
+      .option-wrapper {
+        padding: 25px 63px 0;
+      }
+
+      .col-4 {
+
+        border-right: 1px solid #e2e7eb;
+        &:last-child {
+        
+          border: none;
+        }
+      }
+      
+      .card-body{
+      padding-top: 53px;
+        padding-bottom: 60px;
+      }
+      .card-footer {
+        padding-bottom: 53px; 
+      }
+    }
+    &.option-2 {
+      padding: 80px 0;
+      .option-center {
+        width: 100%;
+        padding-right: 53px;
+      }
+      p {
+        font-family: $font_book;
+        font-size: 1.25rem;
+        color: $font_color_text;
+      }
+      h4 {
+        margin-bottom: 1.9375rem;
+      }
+      .flex {
+        align-self: center;
+      }
+      ol {
+        list-style: none;
+        counter-reset: count-list;
+        padding-left: 50px;
+          li {
+            // position: relative;
+            // &:before {
+            //   content: '\2022';
+            //   color: #000;
+            // }
+
+            font-family: $font_book;
+            counter-increment: count-list;
+            position: relative;
+            margin: 0 0 1.25rem 0;
+            min-height: 47px;
+            &:before {
+
+            content: counter(count-list);
+            background: url('images/icon-polygon.png') top center no-repeat;
+            background-size: 40px;
+            position: absolute;
+            --size: 40px;
+            left: calc(-1 * var(--size) - 10px);
+            // line-height: var(--size);
+            // width: var(--size);
+            // height: calc(var(--size) + 7px);
+            width: 40px;
+            height: 47px;
+            line-height: 47px;
+            top: 4px;
+            text-align: center;
+            font-family: $font_bold;
+            font-size: 1.25rem;
+            color: white;
+
+          }
+        }
+        
+      }
+    }
+
+    &.option-3 {
+      padding: 20px 100px 100px 0px;
+      h1 {
+        margin-bottom: 2.25rem;
+      }
+      h5 {
+        font-family: $font_bold;
+        color: $font_color_navbar;
+        font-size: 1.25rem;
+        margin: 40px 0 3px 0;
+      }
+      p {
+        font-family: $font_book;
+        font-size: 1.25rem;
+        color: $font_color_text;
+      }
+    }
+  }
+  .contact-image {
+    max-width: 150px;
+    width: 100%;
+    padding: 10px 0 30px 0;
+
+  }
+  .contact-footer {
+    max-width:990px;
+    width: 100%;
+    margin: 0 auto;
+    // background: #f1f1f1;
+
+    a.btn {
+      color: #fff;
+      // background-color: $font_color_btn;
+      // border-color: $font_color_btn;
+      &:active, &:hover, &:focus {
+        color: #fff;
+        // background-color: $font_color_btn_hover;
+        // border-color: $font_color_btn_hover;
+      }
+    }
+    .contact-content-box-image {
+      padding-top: 150px;
+    }
+    .contact-content-box {
+      h2,h5 {
+        font-family: $font_bold;
+      }
+      h5 {
+        line-height: normal;
+      }
+      p {
+        font-size: 20px;
+        padding: 10px 0 20px 0;
+      }
+      // max-width: 710px;
+      // width: 100%;
+      // margin: 0 auto;
+      padding: 200px 0 400px 0;
+    }
+  }
+}

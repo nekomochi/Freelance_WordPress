@@ -1,0 +1,44 @@
+{
+    "catcolours": {
+        "page_title": "Category Colours",
+        "menu_title": "Category Colours",
+        "menu_slug": "category-colours",
+        "capability": "edit_posts",
+        "position": "",
+        "parent_slug": "",
+        "icon_url": "",
+        "redirect": true,
+        "post_id": "options",
+        "autoload": false,
+        "update_button": "Update",
+        "updated_message": "Options Updated"
+    },
+    "ctarel": {
+        "page_title": "Generic CTA, related posts section text",
+        "menu_title": "Generic CTA, related posts section text",
+        "menu_slug": "generic-cta-related-posts-section-text",
+        "capability": "edit_posts",
+        "position": "",
+        "parent_slug": "",
+        "icon_url": "",
+        "redirect": true,
+        "post_id": "options",
+        "autoload": false,
+        "update_button": "Update",
+        "updated_message": "Options Updated"
+    },
+    "search_page_banner": {
+        "page_title": "Search Page Banner",
+        "menu_title": "Search Page Banner",
+        "menu_slug": "search-page-banner",
+        "capability": "edit_posts",
+        "position": "",
+        "parent_slug": "",
+        "icon_url": "",
+        "redirect": true,
+        "post_id": "options",
+        "autoload": false,
+        "update_button": "Update",
+        "updated_message": "Options Updated"
+    }
+}

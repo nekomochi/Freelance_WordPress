@@ -1,0 +1,108 @@
+@import 'variables';
+.search {
+	// padding-top: 40px;
+  .shadow-sm {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15) !important;
+  }
+	.detail-page-container {
+    h1 {
+      font-family: $font_bold;
+      font-size:38px;
+      padding: 25px 0;
+    }
+    .container-inner {
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-top: 50px;
+    }
+    .center-box {
+      padding-top: 150px;
+      position: relative;
+      .center-box-inner {
+        padding: 55px 60px 40px 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        .title-content {
+          width: 100%;
+          h1 {
+            font-size: 2.5rem;
+            font-family: $font_black;
+            color: $font_color_navbar;
+            padding: 0;
+          }
+          p {
+            font-size: 1.25rem;
+            font-family: $font_book;
+            color: $font_color_text;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .filter-group {
+      padding-top: 35px;
+    }
+  }
+
+  .page-content {
+    margin-top: calc(0% - 30px);
+    padding-top: calc(10% - 60px);
+    background-color: white;
+  }
+	h4 {
+		font-family: $font_bold;
+		font-size: 16px;
+	}
+	form {
+      input {
+      	font-family: $font_regular;
+        // background: #ECF0F3;
+        
+        &.search-box {
+          padding-right: 60px;
+          height: 40px;
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+          ::-webkit-input-placeholder,:-ms-input-placeholder, ::placeholder {
+            color: $font_color_placeholder;
+          }        
+        }
+        &:focus {
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+        }
+        
+      }
+      
+      .search-icon {
+        width: 50px;
+        height: 28px;
+        position: absolute;
+        right: 15px;
+        top: 6px;
+        background: url(images/icon-search@2x.png) no-repeat;
+        background-size: 20px;
+        background-position: 13px;
+        border-left: 1px solid #e2e7eb;
+      }
+      .search-cancel-icon {
+        position: absolute;
+        right: 65px;
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        background-position: 9px;
+      }
+    }
+    
+    
+    .card {
+    	.card-img-top {
+    		max-width: 100%;
+    	}
+    }
+    .no-results {
+    	padding: 20px 0 350px 0;
+    }
+
+
+}

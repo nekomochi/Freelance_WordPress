@@ -1,0 +1,1408 @@
+/*
+Theme Name: Hive Template
+Theme URI: https://engineering.autodesk.com/hive/
+Author: Team Hive
+Author URI: https://engineering.autodesk.com/hive/
+Description: HIVE is a content hub platform, internal Autodesk facing site where all research and analytics data will be captured.
+Version: 1.0
+License: 
+License URI: 
+Tags: hive
+Text Domain: hivetemplate
+*/
+@font-face {
+  font-family: "Artifakt Element Regular";
+  src: url("fonts/ArtifaktElement-Regular.eot");
+  src: url("fonts/ArtifaktElement-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/ArtifaktElement-Regular.woff") format("woff"), url("fonts/ArtifaktElement-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Artifakt Element Medium";
+  src: url("fonts/ArtifaktElement-Medium.eot");
+  src: url("fonts/ArtifaktElement-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/ArtifaktElement-Medium.woff") format("woff"), url("fonts/ArtifaktElement-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Artifakt Element Bold";
+  src: url("fonts/ArtifaktElement-Bold.eot");
+  src: url("fonts/ArtifaktElement-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/ArtifaktElement-Bold.woff") format("woff"), url("fonts/ArtifaktElement-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Artifakt Legend Regular";
+  src: url("fonts/ArtifaktLegend-Regular.eot");
+  src: url("fonts/ArtifaktLegend-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/ArtifaktLegend-Regular.woff") format("woff"), url("fonts/ArtifaktLegend-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Artifakt Legend Book";
+  src: url("fonts/ArtifaktLegend-Book.eot");
+  src: url("fonts/ArtifaktLegend-Book.eot?#iefix") format("embedded-opentype"), url("fonts/ArtifaktLegend-Book.woff") format("woff"), url("fonts/ArtifaktLegend-Book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Artifakt Legend Medium";
+  src: url("fonts/ArtifaktLegend-Medium.eot");
+  src: url("fonts/ArtifaktLegend-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/ArtifaktLegend-Medium.woff") format("woff"), url("fonts/ArtifaktLegend-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Artifakt Legend Bold";
+  src: url("fonts/ArtifaktLegend-Bold.eot");
+  src: url("fonts/ArtifaktLegend-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/ArtifaktLegend-Bold.woff") format("woff"), url("fonts/ArtifaktLegend-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Artifakt Legend Black";
+  src: url("fonts/ArtifaktLegend-Black.eot");
+  src: url("fonts/ArtifaktLegend-Black.eot?#iefix") format("embedded-opentype"), url("fonts/ArtifaktLegend-Black.woff") format("woff"), url("fonts/ArtifaktLegend-Black.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+.home {
+  position: relative;
+}
+.home .home-wrapper {
+  width: 100%;
+}
+.home .home-search .container {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.home .home-search h1 {
+  font-family: "Artifakt Legend Bold", Arial;
+  font-size: 36px;
+}
+.home .home-search h2 {
+  font-size: 2.25rem;
+}
+.home .home-search h2, .home .home-search h3 {
+  line-height: 40px;
+}
+.home .home-search .center-box {
+  padding: 70px 0 191px 0;
+}
+.home .home-search .intro-box {
+  padding: 0px 0 20px 8px;
+  color: #fff;
+}
+.home .home-search .intro-box h2 {
+  font-family: "Artifakt Legend Black", Arial;
+  font-size: 2.5rem;
+  line-height: 56px;
+}
+.home .home-search .intro-box h3 {
+  font-family: "Artifakt Legend Book", Arial;
+  font-size: 1.25rem;
+  line-height: 28px;
+}
+.home .home-search .search-container {
+  padding: 10px 35px 20px;
+  border-radius: 4px;
+}
+.home .home-search #searchform input {
+  background: #f1f5f8;
+}
+.home .home-search #searchform input.search-box {
+  font-family: "Artifakt Legend Medium", Arial;
+  font-size: 1.25rem;
+  padding: 15px 20px;
+  padding-right: 90px;
+  height: 50px;
+  margin: 20px 0;
+}
+.home .home-search #searchform input:focus {
+  background: #f1f5f8;
+}
+.home .home-search #searchform .btn {
+  width: 70px;
+  height: 50px;
+  right: 50px;
+}
+.home .home-search #searchform .search-icon {
+  width: 50px;
+  height: 32px;
+  position: absolute;
+  right: 70px;
+  top: 39px;
+  background: url("images/icon-search@2x.png") no-repeat;
+  background-size: 25px;
+  background-position: 20px 3px;
+  border-left: 2px solid #e2e7eb;
+}
+.home .home-search #searchform .search-cancel-icon {
+  position: absolute;
+  right: 135px;
+  width: 35px;
+  height: 50px;
+  background-position: 8px;
+  background-size: 25px;
+  background-color: #f1f5f8;
+}
+.home .search-list a {
+  font-family: "Artifakt Legend Bold", Arial;
+  display: inline-block;
+  font-size: 14px;
+  color: #485366;
+  padding: 3px 5px;
+  margin-right: 3px;
+  margin-bottom: 8px;
+}
+.home .search-list a:hover, .home .search-list a :active {
+  color: #485366;
+  text-decoration: none;
+}
+.home .search-list a:first-letter {
+  text-transform: capitalize;
+}
+.home .home-latest-post {
+  background: white;
+}
+.home .home-latest-post h5 {
+  font-family: "Artifakt Legend Bold", Arial;
+  font-size: 1.25rem;
+}
+.home .home-latest-post .home-slider {
+  margin-top: calc(-10% - 10px);
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.home .home-latest-post .slick-track {
+  display: flex;
+  align-items: stretch;
+  height: auto;
+  justify-content: center;
+}
+.home .home-latest-post .slick-track .slick-slide {
+  height: inherit;
+  display: flex;
+  align-items: stretch;
+}
+.home .home-latest-post .slick-slider * {
+  min-height: 0;
+  min-width: 0;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+.home .home-latest-post .slick-list.draggable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.home .home-latest-post .slider-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .feature-ribbon {
+  position: absolute;
+  margin-left: 13px;
+  background: url("images/starred@2x.png") no-repeat;
+  background-size: 48px;
+  width: 48px;
+  height: 60px;
+}
+.home .feature-card.flex {
+  padding-bottom: 0;
+}
+.home .feature-card .card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.home .feature-card .card .card-text {
+  padding-bottom: 20px;
+}
+.home .feature-card .card .card-footer a {
+  display: block;
+  flex: auto;
+}
+.home .home-row h2 {
+  font-family: "Artifakt Legend Bold", Arial;
+}
+.home .home-row .card {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0.125rem 0.8rem rgba(0, 0, 0, 0.075);
+}
+.home .home-footer {
+  background: #f8f9fa;
+}
+.home .home-footer .home-content-box {
+  width: 100%;
+  margin: 0 auto;
+  padding: 154px 0px 144px 45px;
+}
+.home .home-footer .home-content-box h1 {
+  font-family: "Artifakt Legend Bold", Arial;
+  line-height: 42px;
+}
+.home .home-footer .home-content-box p {
+  font-size: 1.125rem;
+  line-height: 28px;
+  padding: 15px 0 0px 0;
+}
+.home .home-footer .home-contact-image {
+  flex-flow: row wrap;
+  align-items: stretch;
+  height: 100%;
+}
+.home .home-footer .home-contact-image .image-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.search .shadow-sm {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.search .detail-page-container h1 {
+  font-family: "Artifakt Legend Bold", Arial;
+  font-size: 38px;
+  padding: 25px 0;
+}
+.search .detail-page-container .container-inner {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+}
+.search .detail-page-container .center-box {
+  padding-top: 150px;
+  position: relative;
+}
+.search .detail-page-container .center-box .center-box-inner {
+  padding: 55px 60px 40px 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.search .detail-page-container .center-box .center-box-inner .title-content {
+  width: 100%;
+}
+.search .detail-page-container .center-box .center-box-inner .title-content h1 {
+  font-size: 2.5rem;
+  font-family: "Artifakt Legend Black", Arial;
+  color: #3B4454;
+  padding: 0;
+}
+.search .detail-page-container .center-box .center-box-inner .title-content p {
+  font-size: 1.25rem;
+  font-family: "Artifakt Legend Book", Arial;
+  color: #666666;
+  margin-bottom: 10px;
+}
+.search .detail-page-container .filter-group {
+  padding-top: 35px;
+}
+.search .page-content {
+  margin-top: calc(0% - 30px);
+  padding-top: calc(10% - 60px);
+  background-color: white;
+}
+.search h4 {
+  font-family: "Artifakt Legend Bold", Arial;
+  font-size: 16px;
+}
+.search form input {
+  font-family: "Artifakt Legend Regular", Arial;
+}
+.search form input.search-box {
+  padding-right: 60px;
+  height: 40px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.search form input.search-box ::-webkit-input-placeholder, .search form input.search-box :-ms-input-placeholder, .search form input.search-box ::placeholder {
+  color: #909398;
+}
+.search form input:focus {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.search form .search-icon {
+  width: 50px;
+  height: 28px;
+  position: absolute;
+  right: 15px;
+  top: 6px;
+  background: url(images/icon-search@2x.png) no-repeat;
+  background-size: 20px;
+  background-position: 13px;
+  border-left: 1px solid #e2e7eb;
+}
+.search form .search-cancel-icon {
+  position: absolute;
+  right: 65px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  background-position: 9px;
+}
+.search .card .card-img-top {
+  max-width: 100%;
+}
+.search .no-results {
+  padding: 20px 0 350px 0;
+}
+
+.detail-page .shadow-sm {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15) !important;
+}
+.detail-page .detail-page-container h1 {
+  font-family: "Artifakt Legend Bold", Arial;
+  font-size: 38px;
+  padding: 25px 0;
+}
+.detail-page .detail-page-container .container-inner {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+}
+.detail-page .detail-page-container .center-box {
+  padding-top: 150px;
+  position: relative;
+}
+.detail-page .detail-page-container .center-box .center-box-inner {
+  padding: 55px 60px 40px 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.detail-page .detail-page-container .center-box .center-box-inner .title-content {
+  width: 100%;
+}
+.detail-page .detail-page-container .center-box .center-box-inner .title-content h1 {
+  font-size: 2.5rem;
+  font-family: "Artifakt Legend Black", Arial;
+  color: #3B4454;
+  padding: 0;
+}
+.detail-page .detail-page-container .center-box .center-box-inner .title-content p {
+  font-size: 1.25rem;
+  font-family: "Artifakt Legend Book", Arial;
+  color: #666666;
+  margin-bottom: 10px;
+}
+.detail-page .detail-page-container .filter-group {
+  padding-top: 35px;
+}
+.detail-page .page-content {
+  margin-top: -80px;
+  padding-top: 80px;
+  background-color: white;
+}
+.detail-page form input {
+  font-family: "Artifakt Legend Regular", Arial;
+}
+.detail-page form input.search-box {
+  padding-right: 60px;
+  height: 40px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.detail-page form input.search-box ::-webkit-input-placeholder, .detail-page form input.search-box :-ms-input-placeholder, .detail-page form input.search-box ::placeholder {
+  color: #909398;
+}
+.detail-page form input:focus {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.detail-page form .btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  padding: 0;
+}
+.detail-page form .search-icon {
+  width: 50px;
+  height: 28px;
+  position: absolute;
+  right: 15px;
+  top: 6px;
+  background: url(images/icon-search@2x.png) no-repeat;
+  background-size: 20px;
+  background-position: 13px;
+  border-left: 1px solid #e2e7eb;
+}
+.detail-page form .search-cancel-icon {
+  position: absolute;
+  right: 65px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  background-position: 9px;
+}
+.detail-page .flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-count: 4;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  align-items: stretch;
+  height: auto;
+  flex-flow: row wrap;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.detail-page .flex-wrapper .flex {
+  display: flex;
+  padding-bottom: 45px;
+  height: inherit;
+  align-items: stretch;
+}
+.detail-page .card .card-img-top {
+  max-width: 100%;
+}
+.detail-page .card .feature-ribbon {
+  position: absolute;
+  margin-left: 13px;
+  background: url("images/starred@2x.png") no-repeat;
+  background-size: 48px;
+  width: 48px;
+  height: 60px;
+}
+.detail-page .scroll-top {
+  cursor: pointer;
+}
+.detail-page .scroll-top a {
+  font-size: 16px;
+  color: #3B4454;
+  font-family: "Artifakt Legend Medium", Arial;
+  vertical-align: text-bottom;
+}
+.detail-page .scroll-top .scroll-top-arrow {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 5px;
+  background: url("images/ico_scroll_top@2x.png") no-repeat;
+  background-size: 16px;
+}
+
+.detail-post a.btn {
+  color: #fff;
+  background-color: #0696D7;
+  border-color: #0696D7;
+}
+.detail-post a.btn:active, .detail-post a.btn:hover, .detail-post a.btn:focus {
+  color: #fff;
+  background-color: #0478ac;
+  border-color: #0478ac;
+}
+.detail-post .breadcrumb {
+  background: #f8f9fa;
+  margin: 0;
+  display: block;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+.detail-post .breadcrumb h6 {
+  font-size: 16px;
+  font-family: "Artifakt Legend Book", Arial;
+  padding: 13px 0;
+  margin: 0;
+}
+.detail-post .breadcrumb .menu {
+  font-size: 15px;
+  display: inline-block;
+}
+.detail-post .breadcrumb .menu li {
+  font-size: 16px;
+  font-family: "Artifakt Legend Book", Arial;
+  padding: 0.85rem 0;
+}
+.detail-post .breadcrumb .menu li a {
+  font-family: "Artifakt Legend Book", Arial;
+  font-size: 16px;
+  padding: 0;
+}
+.detail-post .breadcrumb .menu li a:hover, .detail-post .breadcrumb .menu li a:active {
+  background-color: transparent;
+}
+.detail-post .breadcrumb .menu li .back-arrow {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin: 0 10px;
+  background: url("images/ico_breadcrumb_back@2x.png") no-repeat;
+  background-size: 10px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.detail-post .detail-post-container.post-content {
+  margin-top: calc(-10% - 10px);
+  padding-top: calc(10% - 40px);
+  padding-bottom: 60px;
+  background-color: white;
+}
+.detail-post .detail-post-container h1 {
+  font-family: "Artifakt Legend Bold", Arial;
+  font-size: 2.375rem;
+  padding: 25px 0;
+}
+.detail-post .detail-post-container img {
+  width: 100%;
+}
+.detail-post .detail-post-container .image-wrapper {
+  padding-top: 20px;
+}
+.detail-post .detail-post-container .image-wrapper:first-child {
+  padding-top: 0;
+}
+.detail-post .detail-post-container .image-overlay-wrapper {
+  position: relative;
+}
+.detail-post .detail-post-container .image-overlay-wrapper:hover .overlay {
+  opacity: 1;
+}
+.detail-post .detail-post-container .image-overlay-wrapper a {
+  display: block;
+}
+.detail-post .detail-post-container .caption {
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: "Artifakt Legend Bold", Arial;
+  line-height: normal;
+}
+.detail-post .detail-post-container .caption-text {
+  font-size: 15px;
+  padding-top: 10px;
+  line-height: normal;
+}
+.detail-post .detail-post-container .caption-text p {
+  margin-bottom: 0.5rem;
+}
+.detail-post .detail-post-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.2);
+}
+.detail-post .detail-post-container .container-inner {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+}
+.detail-post .detail-post-container .center-box {
+  padding-top: 150px;
+  position: relative;
+}
+.detail-post .detail-post-container .center-box .tag-list {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.detail-post .detail-post-container .center-box .center-box-inner {
+  padding: 55px 60px 40px 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.detail-post .detail-post-container .center-box .center-box-inner .title-content {
+  width: 100%;
+}
+.detail-post .detail-post-container .center-box .center-box-inner .title-content h1 {
+  font-size: 2.5rem;
+  font-family: "Artifakt Legend Black", Arial;
+  color: #3B4454;
+  padding: 0;
+}
+.detail-post .detail-post-container .center-box .center-box-inner .title-content p {
+  font-size: 1.25rem;
+  font-family: "Artifakt Legend Book", Arial;
+  color: #666666;
+  margin-bottom: 10px;
+}
+.detail-post .detail-post-container .center-box .center-box-inner .title-content .author-wrapper {
+  display: flex;
+}
+.detail-post .detail-post-container .center-box .center-box-inner .title-content .author-wrapper .media {
+  -ms-flex-align: center;
+  align-items: center;
+}
+.detail-post .detail-post-container .center-box .center-box-inner .title-content .author-wrapper .author-image a {
+  display: inline-block;
+  margin-right: 10px;
+}
+.detail-post .detail-post-container .center-box .center-box-inner .title-content .author-wrapper .author-image img {
+  max-width: 50px;
+  width: 100%;
+  border-radius: 4px;
+  display: inline-block;
+}
+.detail-post .detail-post-container .center-box .center-box-inner .title-content .author-wrapper .media-body {
+  padding-left: 10px;
+}
+.detail-post .detail-post-container .center-box .center-box-inner .title-content .author-wrapper p {
+  font-size: 1rem;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+.detail-post .detail-post-container .text-content {
+  font-size: 1.125rem;
+}
+.detail-post .detail-post-container .text-content div {
+  width: 100% !important;
+}
+.detail-post .detail-post-container .text-content h1 {
+  padding: 0;
+}
+.detail-post .detail-post-container .text-content h2, .detail-post .detail-post-container .text-content h3, .detail-post .detail-post-container .text-content h4 {
+  font-family: "Artifakt Legend Medium", Arial;
+}
+.detail-post .detail-post-container .text-content p {
+  font-family: "Artifakt Legend Book", Arial;
+}
+.detail-post .detail-post-container .text-content .wp-caption-text {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 20px;
+}
+.detail-post .detail-post-container .overview {
+  font-size: 20px;
+  line-height: 35px;
+}
+.detail-post .detail-post-container .overview h4 {
+  font-size: 22px;
+  font-family: "Artifakt Legend Medium", Arial;
+  margin: 0;
+  padding: 10px 15px;
+  background: #f0f4f7;
+}
+.detail-post .detail-post-container .overview p {
+  padding: 10px 15px;
+  line-height: normal;
+}
+.detail-post .detail-post-container .overview.benefits h4 {
+  background: #F0F7E8;
+}
+.detail-post .detail-post-container .overview.recommend h4 {
+  background: #E2F9F7;
+}
+.detail-post .detail-post-container .overview.how-to h4 {
+  background: #FFEFEC;
+}
+.detail-post .detail-post-container .overview.how-to ol {
+  list-style: none;
+  display: inline-block;
+  padding: 0 0 0 15px;
+}
+.detail-post .detail-post-container .overview.how-to ol li {
+  float: left;
+  clear: both;
+  position: relative;
+  display: block;
+  counter-increment: step-counter;
+  padding: 0 40px;
+}
+.detail-post .detail-post-container .overview.how-to ol li:before {
+  position: absolute;
+  left: 0;
+  border: 2px solid #f84342;
+  border-radius: 50%;
+  content: counter(step-counter);
+  color: white;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+}
+.detail-post .detail-post-container .overview.tips-tricks h4 {
+  background: #FEF3E3;
+}
+.detail-post .detail-post-container .info-slider-container {
+  position: relative;
+}
+.detail-post .detail-post-container .carousel-control-prev {
+  left: -30px;
+}
+.detail-post .detail-post-container .carousel-control-prev span {
+  position: relative;
+  top: -30px;
+}
+.detail-post .detail-post-container .carousel-control-next {
+  right: -30px;
+}
+.detail-post .detail-post-container .carousel-control-next span {
+  position: relative;
+  top: -30px;
+}
+.detail-post .bg-grey {
+  background-color: #f8f9fa;
+}
+.detail-post .more-post {
+  font-family: "Artifakt Legend Medium", Arial;
+  padding: 42px 0 22px 0;
+}
+.detail-post .more-post h4 {
+  font-size: 1.5rem;
+  font-family: "Artifakt Legend Bold", Arial;
+  color: #3B4454;
+}
+.detail-post .more-post a {
+  font-size: 1rem;
+}
+.detail-post .see-all-arrow {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 5px;
+  background: url("images/ico_see_all@2x.png") no-repeat;
+  background-size: 12px;
+}
+.detail-post .product-container {
+  padding: 80px 0 76px 0;
+}
+.detail-post .product-content {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  max-width: 680px;
+  width: 100%;
+  padding: 45px 30px 40px;
+}
+.detail-post .product-content h1 {
+  padding: 0;
+  margin-bottom: 15px;
+  font-family: "Artifakt Legend Black", Arial;
+  color: #3B4454;
+}
+.detail-post .product-content h6 {
+  font-family: "Artifakt Legend Medium", Arial;
+}
+.detail-post .product-content .heading {
+  font-family: "Artifakt Legend Bold", Arial;
+}
+.detail-post .product-content p {
+  color: #666666;
+}
+.detail-post .product-content ul {
+  padding: 0;
+}
+.detail-post .product-content ul li {
+  list-style: none;
+}
+.detail-post .product-content .related-list a {
+  font-family: "Artifakt Legend Bold", Arial;
+  color: #3B4454;
+}
+.detail-post .product-content .related-list a:hover, .detail-post .product-content .related-list a:active, .detail-post .product-content .related-list a:visited {
+  color: #3B4454;
+}
+.detail-post .product-content .link {
+  font-family: "Artifakt Legend Medium", Arial;
+  color: #0696D7;
+  font-size: 1rem;
+}
+.detail-post .product-content .link-arrow {
+  width: 16px;
+  height: 16px;
+  background: url("images/ico_scroll_top@2x.png") no-repeat;
+  transform: rotate(90deg);
+  background-size: 16px;
+  vertical-align: middle;
+}
+
+.contact-us .option-block h4 {
+  font-family: "Artifakt Legend Bold", Arial;
+  color: #3B4454;
+}
+.contact-us .option-block h1 {
+  font-family: "Artifakt Legend Black", Arial;
+  color: #3B4454;
+}
+.contact-us .option-block h6 {
+  font-family: "Artifakt Legend Book", Arial;
+  font-size: 1.25rem;
+  color: #666666;
+}
+.contact-us .option-block .card {
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.contact-us .option-block img {
+  width: 100%;
+}
+.contact-us .option-block .flex {
+  display: flex;
+  height: inherit;
+  align-items: stretch;
+}
+.contact-us .option-block.navi {
+  padding: 90px 0 100px 0;
+  text-align: center;
+}
+.contact-us .option-block.navi a {
+  display: block;
+  padding: 50px 60px 0;
+}
+.contact-us .option-block.navi .card-body {
+  padding: 36px 45px 50px;
+}
+.contact-us .option-block.option-1 {
+  text-align: center;
+}
+.contact-us .option-block.option-1 .option-image {
+  padding-bottom: 30px;
+}
+.contact-us .option-block.option-1 img {
+  max-width: 180px;
+}
+.contact-us .option-block.option-1 .option-wrapper {
+  padding: 25px 63px 0;
+}
+.contact-us .option-block.option-1 .col-4 {
+  border-right: 1px solid #e2e7eb;
+}
+.contact-us .option-block.option-1 .col-4:last-child {
+  border: none;
+}
+.contact-us .option-block.option-1 .card-body {
+  padding-top: 53px;
+  padding-bottom: 60px;
+}
+.contact-us .option-block.option-1 .card-footer {
+  padding-bottom: 53px;
+}
+.contact-us .option-block.option-2 {
+  padding: 80px 0;
+}
+.contact-us .option-block.option-2 .option-center {
+  width: 100%;
+  padding-right: 53px;
+}
+.contact-us .option-block.option-2 p {
+  font-family: "Artifakt Legend Book", Arial;
+  font-size: 1.25rem;
+  color: #666666;
+}
+.contact-us .option-block.option-2 h4 {
+  margin-bottom: 1.9375rem;
+}
+.contact-us .option-block.option-2 .flex {
+  align-self: center;
+}
+.contact-us .option-block.option-2 ol {
+  list-style: none;
+  counter-reset: count-list;
+  padding-left: 50px;
+}
+.contact-us .option-block.option-2 ol li {
+  font-family: "Artifakt Legend Book", Arial;
+  counter-increment: count-list;
+  position: relative;
+  margin: 0 0 1.25rem 0;
+  min-height: 47px;
+}
+.contact-us .option-block.option-2 ol li:before {
+  content: counter(count-list);
+  background: url("images/icon-polygon.png") top center no-repeat;
+  background-size: 40px;
+  position: absolute;
+  --size: 40px;
+  left: calc(-1 * var(--size) - 10px);
+  width: 40px;
+  height: 47px;
+  line-height: 47px;
+  top: 4px;
+  text-align: center;
+  font-family: "Artifakt Legend Bold", Arial;
+  font-size: 1.25rem;
+  color: white;
+}
+.contact-us .option-block.option-3 {
+  padding: 20px 100px 100px 0px;
+}
+.contact-us .option-block.option-3 h1 {
+  margin-bottom: 2.25rem;
+}
+.contact-us .option-block.option-3 h5 {
+  font-family: "Artifakt Legend Bold", Arial;
+  color: #3B4454;
+  font-size: 1.25rem;
+  margin: 40px 0 3px 0;
+}
+.contact-us .option-block.option-3 p {
+  font-family: "Artifakt Legend Book", Arial;
+  font-size: 1.25rem;
+  color: #666666;
+}
+.contact-us .contact-image {
+  max-width: 150px;
+  width: 100%;
+  padding: 10px 0 30px 0;
+}
+.contact-us .contact-footer {
+  max-width: 990px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contact-us .contact-footer a.btn {
+  color: #fff;
+}
+.contact-us .contact-footer a.btn:active, .contact-us .contact-footer a.btn:hover, .contact-us .contact-footer a.btn:focus {
+  color: #fff;
+}
+.contact-us .contact-footer .contact-content-box-image {
+  padding-top: 150px;
+}
+.contact-us .contact-footer .contact-content-box {
+  padding: 200px 0 400px 0;
+}
+.contact-us .contact-footer .contact-content-box h2, .contact-us .contact-footer .contact-content-box h5 {
+  font-family: "Artifakt Legend Bold", Arial;
+}
+.contact-us .contact-footer .contact-content-box h5 {
+  line-height: normal;
+}
+.contact-us .contact-footer .contact-content-box p {
+  font-size: 20px;
+  padding: 10px 0 20px 0;
+}
+
+.container {
+  max-width: 100% !important;
+  padding-right: 60px !important;
+  padding-left: 60px !important;
+}
+
+body {
+  font-family: "Artifakt Legend Regular", Arial;
+  color: #666666;
+  width: 100%;
+  text-align: center;
+}
+
+.body-wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+}
+
+h1 {
+  color: #485366;
+}
+
+a {
+  color: #0696D7;
+  text-decoration: none;
+  outline: none;
+}
+a:hover, a:active, a:visited {
+  color: #0696D7;
+  text-decoration: none;
+  outline: none;
+}
+a.btn {
+  color: #fff;
+  font-family: "Artifakt Legend Bold", Arial;
+  padding: 5px 30px;
+  font-size: 1.125rem;
+  line-height: 31px;
+  background-image: linear-gradient(to right, #38abdf 0%, #0696d7 100%);
+  border: none;
+}
+a.btn:active, a.btn:hover, a.btn:focus {
+  color: #fff;
+}
+a.btn-primary {
+  color: #fff;
+  background-image: linear-gradient(to right, #38abdf 0%, #0696d7 100%);
+  border: none;
+}
+a.btn-primary:active, a.btn-primary:hover, a.btn-primary:focus {
+  color: #fff;
+  background-image: linear-gradient(to right, #38abdf 0%, #0696d7 100%);
+  border: none;
+}
+
+#searchform .btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  padding: 0;
+}
+
+input[type=text] {
+  border: none !important;
+  border-radius: 4px;
+  outline: none !important;
+  -webkit-appearance: none !important;
+}
+input[type=text]:focus {
+  outline: none !important;
+  -webkit-appearance: none !important;
+}
+
+select {
+  outline: none !important;
+  border: none !important;
+  border-radius: 4px;
+  /* Removes the default <select> styling */
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: none !important;
+}
+
+.chosen-container {
+  font-size: 1rem;
+  border: none;
+  background: #fff;
+  padding-left: 0;
+  padding-right: 0;
+}
+.chosen-container.chosen-with-drop .chosen-drop {
+  border: none;
+  border-radius: 0 0 0.25rem 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.chosen-container .chosen-results {
+  color: #495057;
+  line-height: 1.5;
+  padding: 0;
+  margin-right: 0;
+}
+.chosen-container .chosen-results li.active-result {
+  padding-left: 0.75rem;
+  line-height: 1.5;
+}
+.chosen-container .chosen-results li.highlighted {
+  color: #495057;
+  background: #f0f4f7;
+}
+
+.chosen-container-single .chosen-search {
+  display: none;
+}
+.chosen-container-single .chosen-single {
+  margin-top: 2px;
+  height: auto;
+  border: none;
+  border-radius: unset;
+  background: none;
+  box-shadow: none;
+  padding: 0 0.75rem 0 0.75rem;
+}
+.chosen-container-single .chosen-single div {
+  right: 0.75rem;
+}
+.chosen-container-single .chosen-single div b {
+  margin-top: 2px;
+  background: #fff no-repeat;
+  background-image: url("images/ico_search_select@2x.png") !important;
+  background-size: 18px !important;
+  background-position: right top;
+}
+.chosen-container-single .chosen-single span {
+  margin-right: 18px;
+  color: #222934;
+}
+.chosen-container-single .chosen-drop {
+  border-radius: unset;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: none;
+  border-radius: unset;
+  background: none;
+  box-shadow: none;
+}
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+  background-position: right -20px;
+}
+
+.search-cancel-icon {
+  width: 20px;
+  height: 20px;
+  display: none;
+  cursor: pointer;
+  background: url("images/ico_search_cross@2x.png") no-repeat;
+  background-size: 20px;
+}
+
+.tag-list {
+  font-family: "Artifakt Legend Medium", Arial;
+  font-size: 1.125rem;
+}
+.tag-list a {
+  display: inline-block;
+  font-family: "Artifakt Legend Book", Arial;
+  font-size: 0.875rem;
+  color: #485366;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+}
+.tag-list a:hover, .tag-list a :active {
+  color: #485366;
+  text-decoration: none;
+}
+.tag-list a:first-letter {
+  text-transform: capitalize;
+}
+
+.menu {
+  font-size: 18px;
+  list-style: none;
+  float: none;
+  padding: 0;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  margin: 0;
+  color: #3B4454;
+}
+.menu li {
+  display: inline-block;
+  float: none;
+}
+.menu li.current-menu-parent {
+  background: #f0f4f7;
+}
+.menu li a {
+  display: inline-block;
+  color: #3B4454;
+  font-family: "Artifakt Legend Medium", Arial;
+  padding: 22px 18px;
+}
+.menu li a:hover, .menu li a:active {
+  text-decoration: none;
+  background-color: #f0f4f7;
+}
+.menu li:hover > ul {
+  display: block;
+  min-width: calc(20% - 10px);
+}
+.menu ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.menu ul li {
+  float: none;
+  display: block;
+}
+.menu ul li:hover, .menu ul li.current-menu-item {
+  background-color: #f0f4f7;
+}
+
+.hive-nav.container-fluid {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.hive-nav .navbar-brand {
+  margin: 15px 0;
+  font-family: "Artifakt Legend Bold", Arial;
+  color: #3B4454;
+}
+.hive-nav .navbar-brand:hover {
+  color: #3B4454;
+}
+.hive-nav .navbar-brand img {
+  vertical-align: top;
+  background-image: none !important;
+  background-color: transparent !important;
+}
+.hive-nav .navbar-brand span {
+  font-size: 22px;
+  padding-top: 1px;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-count: 4;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  align-items: stretch;
+  height: auto;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.flex-wrapper .flex {
+  display: flex;
+  padding-bottom: 35px;
+  height: inherit;
+  align-items: stretch;
+}
+
+.link-arrow {
+  width: 16px;
+  height: 16px;
+  background: url("images/ico_learn_more@2x.png") no-repeat;
+  background-size: 16px;
+  vertical-align: middle;
+}
+
+.card {
+  min-width: 100%;
+  border: 1px solid #e8e8e8;
+}
+.card h5 {
+  font-family: "Artifakt Legend Bold", Arial;
+  font-size: 18px;
+  line-height: 24px;
+}
+.card h6 {
+  font-family: "Artifakt Legend Medium", Arial;
+}
+.card a img {
+  border-bottom: 1px solid #e8e8e8;
+}
+.card .card-title {
+  color: #485366;
+}
+.card .card-text:last-child {
+  font-family: "Artifakt Legend Book", Arial;
+  margin-bottom: 0;
+  padding-bottom: 27px;
+  line-height: 20px;
+  color: #666666;
+}
+.card a.card-link {
+  font-family: "Artifakt Legend Medium", Arial;
+  display: block;
+}
+.card .card-border {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.card .card-link-text-blue {
+  font-size: 16px;
+  color: #0696D7;
+}
+.card .card-link-text {
+  font-size: 16px;
+  max-width: 93%;
+  color: #666666;
+}
+.card .card-footer {
+  background: none;
+  border: none;
+  padding-bottom: 18px;
+  padding-top: 0;
+}
+.card .card-footer .card-text {
+  padding-bottom: 10px;
+}
+.card .card-body {
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+.card .card-wrapper {
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 310px !important;
+  height: 310px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+.card .card-wrapper .card-wrapper-inner {
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  text-align: center;
+  align-items: stretch;
+  display: flex;
+  width: auto;
+  min-height: 100%;
+}
+.card .card-wrapper .card-img-top {
+  max-width: initial;
+  width: auto;
+  min-width: 100%;
+  border: none;
+}
+
+.masthead-bg {
+  background-size: cover !important;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.slider {
+  padding: 0 60px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background: url("images/slide-arrow@2x.png") no-repeat;
+  background-size: 52px;
+  width: 37px;
+  height: 37px;
+}
+
+.carousel-control-prev-icon {
+  background-position: 0 0;
+}
+
+.carousel-control-next-icon {
+  background-position: -24px 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 30px;
+  height: 60px;
+  top: auto;
+  bottom: auto;
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 57px;
+}
+
+.carousel-control-next {
+  position: relative;
+  right: 30px;
+}
+
+footer {
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+footer .container-fluid {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
